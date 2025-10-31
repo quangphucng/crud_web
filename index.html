@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRUD — Bản học sinh (bảng đơn giản)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>📋 CRUD — Bản học sinh (cực gọn, hiển thị dạng bảng)</h1>
+
+        <!-- Form -->
+        <section class="card" style="margin-bottom:14px">
+            <div class="card-hd">
+                <strong id="mode">Thêm item</strong>
+                <div class="toolbar"><button id="reset">🗑️ Xoá hết</button></div>
+            </div>
+            <div class="card-bd">
+                <div class="row">
+                    <input id="name" placeholder="Nhập tên item…" />
+                    <button id="save" class="primary">Lưu</button>
+                    <button id="cancel" style="display:none">Huỷ</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Table -->
+        <section class="card">
+            <div class="card-hd"><strong>Danh sách</strong><span id="count" style="color:var(--muted)">0</span></div>
+            <div class="card-bd" style="padding:0">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:120px">ID</th>
+                            <th>Tên</th>
+                            <th style="width:180px">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td colspan="3" class="empty">Chưa có dữ liệu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
