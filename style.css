@@ -125,3 +125,29 @@ tbody tr:nth-child(even) {
     gap: 8px;
     flex-wrap: wrap
 }
+
+
+footer {
+    margin-top: 24px;
+    padding: 12px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+}
+footer p {
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.wrap {
+    flex: 1;
+}
